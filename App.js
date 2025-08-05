@@ -1,20 +1,38 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import Navigetor from "./Components/Navigetor";
+import SignIn from "./Components/pages/SignIn";
+import SignUp from "./Components/pages/SignUp";
+import Footer from "./Components/Footer";
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Navigator">
+          <Stack.Screen
+            name="Navigator"
+            component={Navigetor}
+            options={{ title: "ניהול מסעדה" }}
+          />
+
+          <Stack.Screen
+            name="SignIn"
+            component={SignIn}
+            options={{ title: "אזור התחברות" }}
+          />
+
+          <Stack.Screen
+            name="SignUp"
+            component={SignUp}
+            options={{ title: "אזור הרשמה" }}
+          />
+        </Stack.Navigator>
+        <Footer />
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
