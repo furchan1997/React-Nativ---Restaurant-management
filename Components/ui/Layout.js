@@ -1,6 +1,8 @@
 import { TextInput, View, Text } from "react-native";
 import styled from "@emotion/native";
 
+// This is a custom component that handles the screen structure of every component in the application comprehensively.
+
 export default function Layout({ children }) {
   return (
     // asdasdas

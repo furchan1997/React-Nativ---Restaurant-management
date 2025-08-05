@@ -1,5 +1,7 @@
 import styled from "@emotion/native";
 
+// This is a custom component that handles the main structure of the content.
+
 export default function Main({ children }) {
   return (
     // ########

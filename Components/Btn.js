@@ -1,5 +1,7 @@
 import styled from "@emotion/native";
 
+// This is a custom button component. With defined properties.
+
 export default function Btn({ title, onPress = () => {} }) {
   return (
     <BtnContainer onPress={onPress}>

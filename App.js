@@ -6,13 +6,18 @@ import SignIn from "./Components/pages/SignIn";
 import SignUp from "./Components/pages/SignUp";
 import Footer from "./Components/Footer";
 
+// Main component. Use a stack for navigate in app.
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
+    // For clean ui styls.
     <SafeAreaProvider>
+      {/* A main navigation component through which the rest of the navigation components in the application will pass.  */}
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Navigator">
+          {/* All the screan that need navigation. */}
           <Stack.Screen
             name="Navigator"
             component={Navigetor}

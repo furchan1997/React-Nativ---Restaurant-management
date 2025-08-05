@@ -5,6 +5,8 @@ import Input from "../Input";
 import Layout from "../ui/Layout";
 import Main from "../ui/main";
 
+// Sign-up component for signing-up. with LAYOUT ui for generic ui for the screen and MAIN ui for generic ui for the form. and BTN component for generic ui. ScrollView for smooth scrolling and full screen display even when the screen is full
+
 export default function SignUp() {
   return (
     <ScrollView contentContainerStyle={{ backgroundColor: "white" }}>

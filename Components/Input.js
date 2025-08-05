@@ -1,6 +1,8 @@
 import { TextInput, View, Text } from "react-native";
 import styled from "@emotion/native";
 
+// This is a custom INPUT element. With defined properties. And a defined style.
+
 export default function Input({ lable, props }) {
   return (
     <InputContainer>

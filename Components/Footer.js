@@ -2,6 +2,8 @@ import Logo from "./Logo";
 import styled from "@emotion/native";
 import { TextInput, View, Text } from "react-native";
 
+// This is a custom FOOTER. With defined characteristics. Logo design varies
+
 export default function Footer() {
   return (
     <FooterContainer>

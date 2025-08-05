@@ -4,7 +4,11 @@ import Layout from "./ui/Layout";
 import Header from "./Header";
 import Main from "./ui/main";
 
+// This is a navigator component.
+
 export default function Navigetor() {
+  // A navigation function in an application that accepts the screen name as a parameter.
+
   const navigation = useNavigation();
 
   const navigateTo = (page) => {

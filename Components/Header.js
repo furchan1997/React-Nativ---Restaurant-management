@@ -3,6 +3,8 @@ import Logo from "./Logo";
 import styled from "@emotion/native";
 import { TextInput, View, Text } from "react-native";
 
+// This is a custom HEASER component. With defined properties. Variable logo design
+
 export default function Header({ title, descripeion }) {
   return (
     <SafeHeader>
