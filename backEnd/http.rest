@@ -2,3 +2,33 @@
 
 ### Get all users
 GET {{local}}/api/biz/
+
+
+### Create new user
+POST {{local}}/api/biz/sign-up
+Content-Type: application/json
+
+
+{
+  "fullName": "David Levi",
+  "bizName": "Pizza Star",
+  "bizId": "11111111",
+  "bizPhone": "0541234567",
+  "email": "david0033@example.com",
+  "password": "111111",
+  "address": {
+    "country": "Israel",
+    "city": "Tel Aviv",
+    "street": "Herzl",
+    "streetNumber": "10"
+  }
+}
+
+### Login BIZ USER 
+POST  {{local}}/api/biz/loginג/
+Content-Type: application/json
+
+{
+    "bizId": "101010100",
+    "password": "000000"
+}

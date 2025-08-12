@@ -1,5 +1,5 @@
 import { SafeAreaView } from "react-native-safe-area-context";
-import Logo from "./Logo";
+import Logo from "../Components/Logo";
 import styled from "@emotion/native";
 import { TextInput, View, Text } from "react-native";
 
